@@ -65,7 +65,7 @@ export function About() {
             <h3 className="text-2xl font-semibold">My Story</h3>
             <div className="space-y-4 text-muted-foreground">
               <p className="leading-relaxed">
-                I started my journey in software development 3 years ago, driven
+                I started my journey in software development 4 years ago, driven
                 by curiosity and a desire to build things that matter. What
                 began as simple scripts has evolved into full-stack applications
                 that serve thousands of users.
@@ -101,9 +101,9 @@ export function About() {
                       <h4 className="font-semibold">
                         Senior Software Developer
                       </h4>
-                      <Badge variant="secondary">2022 - Present</Badge>
+                      <Badge variant="secondary">2023 - Present</Badge>
                     </div>
-                    <p className="text-muted-foreground mb-2">TechCorp Inc.</p>
+                    <p className="text-muted-foreground mb-2">DI Solutions</p>
                     <p className="text-sm text-muted-foreground leading-relaxed">
                       Leading development of enterprise applications, mentoring
                       team members, and implementing best practices for scalable
@@ -115,10 +115,10 @@ export function About() {
                 <Card className="hover:shadow-lg transition-shadow duration-300 hover:scale-105">
                   <CardContent className="pt-6">
                     <div className="flex justify-between items-start mb-2">
-                      <h4 className="font-semibold">Full Stack Developer</h4>
-                      <Badge variant="secondary">2020 - 2022</Badge>
+                      <h4 className="font-semibold">Front End Developer</h4>
+                      <Badge variant="secondary">2022 - 2023</Badge>
                     </div>
-                    <p className="text-muted-foreground mb-2">StartupXYZ</p>
+                    <p className="text-muted-foreground mb-2">DI Solutions</p>
                     <p className="text-sm text-muted-foreground leading-relaxed">
                       Built and maintained multiple web applications,
                       collaborated with cross-functional teams, and contributed
@@ -137,15 +137,15 @@ export function About() {
                 <CardContent className="pt-6">
                   <div className="flex justify-between items-start mb-2">
                     <h4 className="font-semibold">
-                      Bachelor of Computer Science
+                      Bachelor of Electrical Engineering
                     </h4>
-                    <Badge variant="secondary">2016 - 2020</Badge>
+                    <Badge variant="secondary">2015 - 2019</Badge>
                   </div>
                   <p className="text-muted-foreground">
-                    University of Technology
+                    Gujarat Technological University
                   </p>
                   <p className="text-sm text-muted-foreground mt-2 leading-relaxed">
-                    Graduated with honors. Specialized in software engineering
+                    Graduated with honors. Specialized in electrical engineering
                     and participated in various hackathons and coding
                     competitions.
                   </p>

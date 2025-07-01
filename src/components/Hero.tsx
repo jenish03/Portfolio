@@ -23,6 +23,13 @@ export function Hero() {
     }
   };
 
+   const handleResumeDownload = () => {
+    const link = document.createElement("a");
+    link.href = "/JenishMistry.pdf"; // relative to /public
+    link.download = "JenishMistry.pdf";
+    link.click();
+  };
+
   return (
     <section
       id="home"
@@ -48,7 +55,7 @@ export function Hero() {
               </Badge>
               <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight">
                 <span className="bg-gradient-to-r from-primary to-primary/60 bg-clip-text text-transparent">
-                  John Doe
+                  Jenish Mistry
                 </span>
                 <br />
                 <span className="bg-gradient-to-r from-foreground to-muted-foreground bg-clip-text text-transparent">
@@ -74,6 +81,7 @@ export function Hero() {
                 variant="outline"
                 size="lg"
                 className="text-base hover:scale-105 transition-transform duration-200 cursor-pointer"
+                onClick={()=>{handleResumeDownload()}}
               >
                 Download Resume
               </Button>
@@ -83,7 +91,7 @@ export function Hero() {
             <div className="grid grid-cols-3 gap-8 pt-8 border-t">
               <div className="text-center group">
                 <div className="text-2xl font-bold text-primary group-hover:scale-110 transition-transform duration-200">
-                  3+
+                  4+
                 </div>
                 <div className="text-sm text-muted-foreground">
                   Years Experience
@@ -91,7 +99,7 @@ export function Hero() {
               </div>
               <div className="text-center group">
                 <div className="text-2xl font-bold text-primary group-hover:scale-110 transition-transform duration-200">
-                  50+
+                  20+
                 </div>
                 <div className="text-sm text-muted-foreground">
                   Projects Completed
@@ -99,7 +107,7 @@ export function Hero() {
               </div>
               <div className="text-center group">
                 <div className="text-2xl font-bold text-primary group-hover:scale-110 transition-transform duration-200">
-                  20+
+                  5+
                 </div>
                 <div className="text-sm text-muted-foreground">
                   Happy Clients
@@ -122,7 +130,7 @@ export function Hero() {
               <Avatar className="w-80 h-80 border-4 border-primary/20 relative z-10 group-hover:scale-105 transition-transform duration-300">
                 <AvatarImage src="/placeholder-avatar.jpg" alt="John Doe" />
                 <AvatarFallback className="text-6xl bg-primary/10">
-                  JD
+                  JM
                 </AvatarFallback>
               </Avatar>
 
@@ -132,11 +140,11 @@ export function Hero() {
                   Available for hire
                 </Badge>
               </div>
-              <div className="absolute -bottom-4 -left-4 animate-pulse">
+              {/* <div className="absolute -bottom-4 -left-4 animate-pulse">
                 <Badge variant="secondary" className="shadow-lg">
                   Full Stack
                 </Badge>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>

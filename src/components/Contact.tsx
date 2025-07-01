@@ -40,23 +40,24 @@ export function Contact() {
     resolver: yupResolver(schema),
   });
   const sectionRef = useRef<HTMLElement>(null);
+  const currentYear = new Date().getFullYear();
 
   const contactInfo = [
     {
       title: "Email",
-      value: "john.doe@example.com",
+      value: "jenishmistry03@gmail.com",
       icon: "📧",
-      link: "mailto:john.doe@example.com",
+      link: "mailto:jenishmistry03@gmail.com",
     },
     {
       title: "Phone",
-      value: "+1 (555) 123-4567",
+      value: "+91 9512194029",
       icon: "📱",
-      link: "tel:+15551234567",
+      link: "tel:+919512194029",
     },
     {
       title: "Location",
-      value: "San Francisco, CA",
+      value: "Surat, GJ",
       icon: "📍",
       link: "#",
     },
@@ -65,22 +66,22 @@ export function Contact() {
   const socialLinks = [
     {
       name: "GitHub",
-      url: "https://github.com",
+      url: "https://github.com/jenish03",
       icon: "🐙",
     },
     {
       name: "LinkedIn",
-      url: "https://linkedin.com",
+      url: "https://www.linkedin.com/in/jenish-mistry-575a64178",
       icon: "💼",
     },
-    {
-      name: "Twitter",
-      url: "https://twitter.com",
-      icon: "🐦",
-    },
+    // {
+    //   name: "Twitter",
+    //   url: "https://twitter.com",
+    //   icon: "🐦",
+    // },
     {
       name: "Portfolio",
-      url: "#",
+      url: "https://github.com/jenish03",
       icon: "🌐",
     },
   ];
@@ -341,7 +342,7 @@ export function Contact() {
           )}
         >
           <p className="text-muted-foreground">
-            © 2024 John Doe. All rights reserved.
+            © {currentYear} Jenish Mistry. All rights reserved.
           </p>
           <p className="text-sm text-muted-foreground mt-2">
             Built with Next.js, TypeScript, and shadcn/ui
